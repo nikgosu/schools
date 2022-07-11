@@ -196,7 +196,8 @@ export const initialState = {
 			]
 		}
 	],
-	history: []
+	history: [],
+	selectedSchool: {}
 }
 
 export const reducer = (state, action) => {
