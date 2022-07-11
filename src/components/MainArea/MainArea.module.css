@@ -1,0 +1,9 @@
+.container {
+	background: url("../../img/background.png") no-repeat ;
+	width: Calc(100% - 90px);
+	height: 100%;
+}
+
+.content {
+	margin: 60px 40px 0 40px;
+}

@@ -6,7 +6,8 @@ import {
 	StartLearningGroupAction,
 	UpdateSchoolAction
 } from "./store/actionCreators"
-import {useEffect} from "react"
+import NavBar from "./components/NavBar/NavBar"
+import MainArea from "./components/MainArea/MainArea"
 
 function App() {
 	const str = useSelector(state => state)
@@ -46,18 +47,10 @@ function App() {
 		dispatch(FinishLearningGroupAction({schoolName: 'ADS', courseName: 'Demo course 1', groupName: 'LearningGroup 1'}))
 	}
 
-	useEffect(() => {
-		console.log(str)
-	}, [str])
-
   return (
     <div className="App">
-	    <button onClick={createSchool}>Create school</button>
-	    <button onClick={updateSchool}>Update school</button>
-	    <button onClick={registerCourse}>Register course</button>
-	    <button onClick={startLearningGroup}>Start learning group</button>
-	    <button onClick={doneLesson}>Done lesson</button>
-	    <button onClick={finishLearningGroup}>Finish learning group</button>
+	    <NavBar/>
+	    <MainArea/>
     </div>
   );
 }

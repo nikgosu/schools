@@ -1,0 +1,42 @@
+.container {
+	font-size: 15px;
+	margin-bottom: 28px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.leftside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.leftside h2 {
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.leftside p {
+	font-size: 14px;
+	color: #000000;
+	margin-bottom: 35px;
+}
+
+.container hr {
+	border: 1px solid #DFDFDF;
+}
+
+.rightside {
+	font-size: 14px;
+}
+
+.rightside p {
+	margin-bottom: 10px;
+	text-align: right;
+}
